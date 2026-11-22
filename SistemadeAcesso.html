@@ -17,14 +17,28 @@
             <option value="prestador">Prestador de serviço</option>
         </select>
 
+            <div id="campo-servico">
+                <label for="servicos"> Serviços </label>
+
+                <select id="servicos">
+                
+                        <option value="entregador">Entregador</option>
+                        <option value="manutencao">Manutenção</option>
+                        <option value="outros">Outros</option>
+                    
+                </select>
+            </div>
+
         <label for="nome"> Nome Completo</label>
         <input id="nome" type="text">
+        <p id="nome-error" class="error"></p>
 
         <label for="rg">RG</label>
         <input id="rg" type="text">
 
         <label for="cpf">CPF</label>
-        <input id="cpf" type="text">
+        <input id="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00">
+        <p id="cpf-error" class="error"></p>
 
         <label for="telefone">Telefone</label>
         <input id="telefone" type="text">
@@ -42,7 +56,7 @@
            
        </div>
 
-        <button type="button">Registrar entrada</button>
+        <button type="button" id="registrar">Registrar entrada</button>
 
     </form>
     <script src="script.js"></script>
